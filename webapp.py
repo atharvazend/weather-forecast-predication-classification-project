@@ -3,11 +3,11 @@ import pickle
 import numpy as np
 
 # Load the trained logistic regression model
-with open(r"C:\My folder\weather forecast predication classification project\logistic_regression_model.pkl", "rb") as f:
+with open("logistic_regression_model.pkl", "rb") as f:
     model = pickle.load(f)
-with open(r"C:\My folder\weather forecast predication classification project\scaler.pkl", 'rb') as f:
+with open("scaler.pkl", 'rb') as f:
     scaler = pickle.load(f)
-with open(r"C:\My folder\weather forecast predication classification project\label_encoder.pkl", 'rb') as f:
+with open("label_encoder.pkl", 'rb') as f:
     encoder = pickle.load(f)
 
 # App title
