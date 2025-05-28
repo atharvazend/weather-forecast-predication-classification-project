@@ -16,11 +16,11 @@ st.write("Enter the weather parameters below to predict whether it will rain or 
 
 # Input form
 with st.form("input_form"):
-    temperature = st.number_input("🌡️ Temperature (°C)", min_value=0.0, max_value=50.0 )
-    humidity = st.number_input("💧 Relative Humidity (%)", min_value=0.0, max_value=100.0)
-    wind_speed = st.number_input("🌬️ Wind Speed (km/h)", min_value=0.0, max_value=150.0)
-    cloud_cover = st.number_input("☁️ Cloud Cover (%)", min_value=0.0, max_value=100.0)
-    pressure = st.number_input("📈 Pressure (hPa)", min_value=900.0, max_value=1100.0)
+    temperature = st.number_input("🌡️ Temperature (°C) (0 to 100)", min_value=0.0, max_value=50.0 )
+    humidity = st.number_input("💧 Relative Humidity (%) (0 to 100)", min_value=0.0, max_value=100.0)
+    wind_speed = st.number_input("🌬️ Wind Speed (km/h) (0 to 150)", min_value=0.0, max_value=150.0)
+    cloud_cover = st.number_input("☁️ Cloud Cover (%) (0 to 100)", min_value=0.0, max_value=100.0)
+    pressure = st.number_input("📈 Pressure (milibars) (500 to 1500)", min_value=900.0, max_value=1100.0)
 
     submit = st.form_submit_button("Predict Rain")
 
