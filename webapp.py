@@ -20,7 +20,7 @@ with st.form("input_form"):
     humidity = st.number_input("💧 Relative Humidity (%) (0 to 100)", min_value=0.0, max_value=100.0)
     wind_speed = st.number_input("🌬️ Wind Speed (km/h) (0 to 150)", min_value=0.0, max_value=150.0)
     cloud_cover = st.number_input("☁️ Cloud Cover (%) (0 to 100)", min_value=0.0, max_value=100.0)
-    pressure = st.number_input("📈 Pressure (milibars) (500 to 1500)", min_value=500.0, max_value=1500.0)
+    pressure = st.number_input("📈 Pressure (millibars) (500 to 1500)", min_value=500.0, max_value=1500.0)
 
     submit = st.form_submit_button("Predict Rain")
 
